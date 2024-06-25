@@ -1,0 +1,30 @@
+[user]
+	email = s.flores@outlook.com.ar
+	name = sebastian-uriel-flores
+[credential]
+	helper = store
+[alias] 
+    s = status 
+    cm = commit -m 
+    cam = !git add -A && git commit -m 
+    co = checkout 
+    cob = checkout -b 
+    del = branch -D     
+    br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate 
+    save = !git add -A && git commit -m        
+    lg = !git log --pretty=format:\"%C(red)%h - %C(white)%s %C(green)(%ai) [%an]\" --abbrev-commit -30 
+    sync = !git pull origin && git push origin HEAD
+    confori = config --list --show-origin 
+    confglob = config --list --global
+[pull]
+    rebase = false
+[push]
+    autoSetupRemote = true
+[safe]
+	directory = %(prefix)///wsl.localhost/Ubuntu/home/sflores/Desarrollo/Ingenieria_Informatica/FIoT
+	directory = %(prefix)///wsl.localhost/Ubuntu/home/sflores/Desarrollo/Azure/Cognitive-Services/01-Platzi-CognitiveServices
+	directory = %(prefix)///wsl.localhost/Ubuntu-22.04/home/sflores/Desarrollo/Ingenieria_Informatica/FIoT
+[core]
+	editor = code --wait
+#[http]
+#    sslverify = false
